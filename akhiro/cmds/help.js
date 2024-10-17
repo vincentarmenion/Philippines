@@ -3,7 +3,7 @@ module.exports = {
     name: "help",
     description: "Show available commands and their descriptions",
     usage: "help [command]",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["commands", "h"],
     role: 0,
   },
@@ -27,9 +27,9 @@ module.exports = {
         helpMessage += `├─────────────⟡`;
       }
       helpMessage += `
-│ 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 𝙱𝚢: 𝙰𝚔𝚑𝚒𝚛𝚘𝙳𝚎𝚟
-│ 𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚖𝚎𝚍 𝙱𝚢: 𝚁𝚞𝚒𝙳𝚎𝚟
-│ 𝙵𝚒𝚡𝚎𝚍 𝙱𝚢: 𝙻𝚒𝙰𝙽𝙴
+│ 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 𝙱𝚢:𝐕𝐈𝐍𝐂𝐄𝐍𝐓 𝐁𝐎𝐓 
+│ 𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚖𝚎𝚍 𝙱𝚢:https://www.facebook.com/100090775159086
+│ 𝙵𝚒𝚡𝚎𝚍 𝙱𝚢:𝐕𝐈𝐍𝐂𝐄𝐍𝐓
 ╰──────────────⟡
 `;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
