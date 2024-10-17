@@ -12,14 +12,14 @@ const configPath = path.join(process.cwd(), "akhiro_config.json");
 
 const config = fs.readJsonSync(configPath, { throws: true });
 
-global.AkhiroBot = {
-  botName: config.botName,
-  botPrefix: config.botPrefix,
+global.Vincent bot = {
+  botName: config.「 𝗈𝗐𝗇𝖾𝗋: 𝐕𝐈𝐍𝐂𝐄𝐍𝐓 𝐁𝐎𝐓,
+  botPrefix: config.=,
   botDev: config.botDev,
   contact: config.contact,
-  botOwner: config.botOwner,
-  ownerUID: config.ownerUID,
-  botAdmins: config.botAdmins,
+  botOwner: config.Vin-cent,
+  ownerUID: config.100090775159086,
+  botAdmins: config.100090775159086,
   commands: {},
   loadCmd: loadCmd,
   unloadCmd: unloadCmd,
@@ -37,7 +37,7 @@ app.get("/README.md", (req, res) => {
 });
 
 function loadCommands() {
-  const commandsPath = path.join(__dirname, "akhiro", "cmds");
+  const commandsPath = path.join(__dirname, "Vincent", "cmds");
   const commandFiles = fs
     .readdirSync(commandsPath)
     .filter((file) => file.endsWith(".js"));
@@ -49,7 +49,7 @@ function loadCommands() {
     const endTime = new Date();
 
     if (command.config && command.onRun) {
-      global.AkhiroBot.commands[commandName] = command;
+      global.Vincentbot.commands[commandName] = command;
 
       const duration = endTime - startTime;
       const loadingLog = gradient.rainbow(
@@ -62,12 +62,12 @@ function loadCommands() {
 }
 
 function loadCmd(file) {
-  const filePath = path.join(__dirname, "akhiro", "cmds", `${file}.js`);
+  const filePath = path.join(__dirname, "Vincent", "cmds", `${file}.js`);
 
   try {
     const command = require(filePath);
     const { name } = command.config;
-    global.AkhiroBot.commands[name] = command;
+    global.Vincentbot.commands[name] = command;
     return { success: true, message: `Command "${name}" loaded successfully.` };
   } catch (error) {
     return {
@@ -78,10 +78,10 @@ function loadCmd(file) {
 }
 
 function unloadCmd(name) {
-  const command = global.AkhiroBot.commands[name];
+  const command = global.Vincentbot.commands[name];
 
   if (command) {
-    delete global.AkhiroBot.commands[name];
+    delete global.Vincentbot.commands[name];
     return {
       success: true,
       message: `Command "${name}" unloaded successfully.`,
@@ -92,7 +92,7 @@ function unloadCmd(name) {
 }
 
 function loadAll() {
-  const commandsDir = path.join(__dirname, "akhiro", "cmds");
+  const commandsDir = path.join(__dirname, "Vincent", "cmds");
   const files = fs.readdirSync(commandsDir);
 
   const results = [];
@@ -281,7 +281,7 @@ function initializeBot() {
 
               const commandName = Object.keys(global.AkhiroBot.commands).find(
                 (key) =>
-                  global.AkhiroBot.commands[key].config.aliases?.includes(
+                  global.Vincentbot.commands[key].config.aliases?.includes(
                     inputCommand,
                   ) || key === inputCommand,
               );
@@ -295,7 +295,7 @@ function initializeBot() {
 
                     if (requiredRole === 1) {
                       function isAdmin(userId) {
-                        return global.AkhiroBot.botAdmins.includes(userId);
+                        return global.Vncent.botAdmins.includes(userId);
                       }
 
                       if (!isAdmin(event.senderID)) {
@@ -332,16 +332,16 @@ function initializeBot() {
                   `▄▀█ █▄▀ █░█ █ █▀█ █▀█
 █▀█ █░█ █▀█ █ █▀▄ █▄█
 ━━━━━━━━━━━━━━━━━━━
-Hello there User, Im AkhiroBot. My Prefix Is This [ ${global.AkhiroBot.botPrefix} ]. I Hope You Will Enjoy Using Me, Have Fun. Thanks!
+Hello there User, Im Vincent bot. My Prefix Is This [ ${global.Vincent.botPrefix} ]. I Hope You Will Enjoy Using Me, Have Fun. Thanks!
 
-AkhiroBot Is A Collab Bot File Project Made By AkhiroDev, LiANE And Yu3Bot, So Please If You Managed To Find This File, Please Don't Abuse This Bot File Project Of Our's.
+Vincentbot Is A Collab Bot File Project Made By 𝐕𝐈𝐍𝐂𝐄𝐍𝐓 𝐁𝐎𝐓, And Yu3Bot, So Please If You Managed To Find This File, Please Don't Abuse This Bot File Project Of Our's.
 
-DEVELOPERS OF AKHIROBOT:
-- YueBot ( Rui Reogo )
-- AkhiroDev ( Francis Loyd Raval )
-- LiANE ( Liane Cagara )
+DEVELOPERS OF VINCENT ARMENION:
+- Vincentbot ( Rui Reogo )
+- Vin-cent ( philippines Loyd Raval )
+- Vincent ( Vincent Armenion )
 
-YSD: AkhiroBot`,
+YSD: Vincentbot`,
                   "sans",
                 ),
                 event.threadID,
