@@ -3,7 +3,7 @@ module.exports = {
     name: "tid",
     description: "Get the thread ID of the current chat",
     usage: "tid",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["threadid", "chatid"],
   },
   onRun: async ({ api, event }) => {
