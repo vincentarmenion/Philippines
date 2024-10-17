@@ -4,7 +4,7 @@ module.exports = {
     description: "Restart your akhirobot",
     role: 1,
     usage: "restart",
-    author: "Rui",
+    author: "Vin-cent",
   },
   onRun: async ({ api, event, args }) => {
     await api.sendMessage("Restarted :)", event.threadID, event.messageID);
