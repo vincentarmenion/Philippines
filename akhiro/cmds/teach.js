@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "teach",
+    name: "Vin-cent",
     description: "Teach SimSimi a response.",
     usage: "teach [message] [answer]",
     author: "Rui",
