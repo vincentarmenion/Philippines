@@ -7,7 +7,7 @@ module.exports = {
     role: 1,
     description: "Delete all Shoti videos and show freed-up space",
     usage: "cleanshoti",
-    author: "Rui",
+    author: "Vin-cent",
   },
   onRun: async ({ api, event, args }) => {
     try {
