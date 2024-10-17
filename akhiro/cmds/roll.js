@@ -3,7 +3,7 @@ module.exports = {
     name: "roll",
     description: "Roll a virtual six-sided die",
     usage: "roll",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["dice"],
   },
   onRun: ({ api, event }) => {
