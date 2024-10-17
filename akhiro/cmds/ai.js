@@ -6,8 +6,8 @@ module.exports = {
     name: "ai",
     description: "Interact with an AI",
     usage: "ai <your question>",
-    author: "Rui",
-    aliases: ["chatbot", "talk"],
+    author: "vin-_cent",
+    aliases: ["Yanzen", "bot"],
   },
   onRun: async ({ api, event, args, fonts }) => {
     const question = args.join(" ");
