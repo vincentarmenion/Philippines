@@ -1,10 +1,10 @@
 const axios = require("axios");
 
 module.exports["config"] = {
-  name: "chesca",
-  author: "Rui | LiANE @nealianacagara",
+  name: "Vincent",
+  author: "Vin-cent",
   role: 0,
-  usage: "chesca [prompt]",
+  usage: "Vincent [prompt]",
 };
 
 module.exports.onRun = async ({ api, event, args }) => {
@@ -21,7 +21,7 @@ module.exports.onRun = async ({ api, event, args }) => {
         true,
       );
       const processingMessage = await api.sendMessage(
-        `Asking 💗 Chesca. Please wait a moment...`,
+        `Asking 🌬 Vincent. Please wait a moment...`,
         event.threadID,
         event.messageID,
       );
@@ -49,7 +49,7 @@ module.exports.onRun = async ({ api, event, args }) => {
       await api.unsendMessage(processingMessage.messageID);
     }
   } catch (error) {
-    console.error(`❌ | Failed to get 💗 Chesca's response: ${error.message}`);
+    console.error(`❌ | Failed to get 🛸 Chesca's response: ${error.message}`);
     const errorMessage = `❌ | An error occurred. You can try typing your query again or resending it. There might be an issue with the server that's causing the problem, and it might resolve on retrying.`;
     api.sendMessage(errorMessage, event.threadID);
   }
