@@ -2,11 +2,11 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "gpt",
+    name: "Ai",
     role: 0,
-    aliases: ["chatgpt"],
-    author: "AkhiroDEV",
-    usage: "gpt [ query ]",
+    aliases: ["Ai"],
+    author: "Vin-cent",
+    usage: "ai [ query ]",
   },
   onRun: async ({ args, api, fonts, event }) => {
     try {
