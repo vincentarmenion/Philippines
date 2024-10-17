@@ -8,7 +8,7 @@ module.exports = {
     name: "uptime",
     description: "Retrieve system information and check server latency.",
     usage: "uptime",
-    author: "Rui",
+    author: "vin-cent",
   },
   onRun: async ({ api, event, fonts }) => {
     try {
