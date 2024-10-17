@@ -6,7 +6,7 @@ module.exports = {
     role: 1,
     description: "Get information from Shoti API",
     usage: "shotilb [leaderboard/stats]",
-    author: "Rui | Liby",
+    author: "Vin-cent",
   },
   onRun: async ({ api, event, args, fonts }) => {
     try {
