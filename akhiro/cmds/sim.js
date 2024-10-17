@@ -5,7 +5,7 @@ module.exports = {
     name: "sim",
     description: "Talk to SimSimi.",
     usage: "sim [message]",
-    author: "Rui",
+    author: "Vin-cent",
   },
 
   onRun: async ({ api, event, args }) => {
