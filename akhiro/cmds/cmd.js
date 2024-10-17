@@ -8,7 +8,7 @@ module.exports = {
     role: 1,
     description: "Command Module Deployment",
     usage: "cmd [help/load/loadAll/unload/install]",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["c"],
   },
   onRun: async ({ api, event, args, fonts }) => {
