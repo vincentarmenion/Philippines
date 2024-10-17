@@ -7,7 +7,7 @@ module.exports = {
     name: "flip",
     description: "Flip a coin and bet on heads or tails.",
     usage: "flip [heads/tails/view/history] [amount]",
-    author: "Rui Reogo (ruingl)",
+    author: "Vin-cent",
     aliases: ["coinflip"],
   },
   onRun: async ({ api, event, args, fonts }) => {
