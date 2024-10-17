@@ -4,7 +4,7 @@ const axios = require("axios");
 module.exports.config = {
   name: "tik",
   role: 0,
-  credits: "Rui | Eugene Aguilar",
+  credits: "Vin-cent",
   description: "Download TikTok videos",
   usage: "tik video <link>\ntik audio <link>",
 };
