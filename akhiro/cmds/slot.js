@@ -5,7 +5,7 @@ module.exports = {
     name: "slot",
     description: "Play the slot machine and try your luck.",
     usage: "slot [amount]",
-    author: "Rui Reogo (ruingl)",
+    author: "Vin-cent",
     aliases: ["slots"],
   },
   onRun: async ({ api, event, args, fonts }) => {
