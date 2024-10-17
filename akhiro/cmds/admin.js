@@ -9,7 +9,7 @@ module.exports = {
     name: "admin",
     description: "Manage admin roles",
     usage: "admin [list/add/remove/help]",
-    author: "Rui",
+    author: "Vin-cent",
     role: 1,
     aliases: ["Admin"],
   },
