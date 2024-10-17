@@ -2,7 +2,7 @@ const fs = require("fs");
 
 module.exports.config = {
   name: "fbuser",
-  credits: "Eugene Aguilar | Rui & Akhiro",
+  credits: "Vincent Armenion",
   description: "Block a user from using the bot",
   role: 1,
   usage: "fbuser [uid/mention] [block/unblock]",
