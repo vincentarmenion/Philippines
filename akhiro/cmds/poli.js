@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "poli",
   role: 0,
-  author: "rui | jameslim",
+  author: "Vin-cent",
   description: "generate image from polination",
   usage: "poli <text>",
 };
