@@ -1,10 +1,10 @@
 const axios = require("axios");
 
 module.exports.config = {
-  name: "nica",
-  author: "Rui | LiANE @nealianacagara",
+  name: "Yanzen",
+  author: "Vin-cent",
   role: 0,
-  usage: "nica [prompt]",
+  usage: "Yanzen [prompt]",
 };
 
 module.exports.onRun = async ({ api, event, args }) => {
@@ -21,7 +21,7 @@ module.exports.onRun = async ({ api, event, args }) => {
         true,
       );
       const processingMessage = await api.sendMessage(
-        `Asking 🔎 Nica. Please wait a moment...`,
+        `Asking 🔎 Yanzen. Please wait a moment...`,
         event.threadID,
       );
 
