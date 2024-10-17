@@ -3,7 +3,7 @@ module.exports = {
     name: "hello",
     description: "A simple hello world command",
     usage: "hello",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["hi", "greet"],
   },
   onRun: async ({ api, event, args }) => {
