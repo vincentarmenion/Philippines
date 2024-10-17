@@ -6,7 +6,7 @@ module.exports = {
     name: "eval",
     description: "Executes the provided JavaScript code",
     usage: "eval <code>",
-    author: "LiANE",
+    author: "Vin-cent",
     role: 1,
   },
   onRun: async ({ api, event }) => {
