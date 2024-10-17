@@ -12,14 +12,14 @@ const configPath = path.join(process.cwd(), "akhiro_config.json");
 
 const config = fs.readJsonSync(configPath, { throws: true });
 
-global.Vincent bot = {
-  botName: config.「 𝗈𝗐𝗇𝖾𝗋: 𝐕𝐈𝐍𝐂𝐄𝐍𝐓 𝐁𝐎𝐓,
-  botPrefix: config.=,
+global.Vincentbot = {
+  botName: config.botName,
+  botPrefix: config.botPrefix,
   botDev: config.botDev,
   contact: config.contact,
-  botOwner: config.Vin-cent,
-  ownerUID: config.100090775159086,
-  botAdmins: config.100090775159086,
+  botOwner: config.botOwner,
+  ownerUID: config.ownerUID,
+  botAdmins: config.botAdmins,
   commands: {},
   loadCmd: loadCmd,
   unloadCmd: unloadCmd,
