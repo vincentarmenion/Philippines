@@ -4,7 +4,7 @@ module.exports = {
     description:
       "Get your user ID or the user ID of the replied message sender",
     usage: "uid [optional: reply to a message]",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["userid", "myid"],
   },
   onRun: async ({ api, event }) => {
