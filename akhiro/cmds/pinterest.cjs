@@ -5,7 +5,7 @@ module.exports = {
     role: 0,
     description: "Search for images on Pinterest.",
     usage: "pinterest [query] - [amount]",
-    author: "Rui | Developer",
+    author: "Vin-cent| Developer",
   },
   onRun: async ({ api, event, args, fonts }) => {
     const axios = require("axios");
