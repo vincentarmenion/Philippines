@@ -6,7 +6,7 @@ module.exports = {
     role: 1,
     description: "Get a command line bash shell",
     usage: "shell [command]",
-    author: "Rui",
+    author: "Vin-cent",
     aliases: ["bash", "terminal", "$"],
   },
   onRun: ({ api, event, args }) => {
